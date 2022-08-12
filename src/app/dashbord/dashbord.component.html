@@ -1,0 +1,22 @@
+<div class="card w-25 bg-success" id="e">
+  <div class="card-body">
+    <h5 class="card-title"><b>DEPOSITE</b></h5>
+    <form action="">
+      <input type="text" [(ngModel)]="amount" name="amount" placeholder="enter amount"> <br><br>
+      <input type="text" [(ngModel)]="UID" name="UID" placeholder="enter UDI number"><br><br>
+      <input type="text" [(ngModel)]="account" name="account" placeholder="enter account"><br><br>
+    </form>
+    <a type="submit" (click)="deposite()" class="btn btn-primary">OK</a>
+  </div>
+</div>
+<div class="card w-25 bg-danger" id="r">
+  <div class="card-body">
+    <h5 class="card-title"><b>WITHDRAWEL</b></h5>
+    <form action="">
+      <input type="text" [(ngModel)]="amount" name="amount" placeholder="enter amount"><br><br>
+      <input type="text" [(ngModel)]="UID" name="UID" placeholder="enter UDI number"><br><br>
+      <input type="text" [(ngModel)]="account" name="account" placeholder="enter UDI number"><br><br>
+    </form>
+    <a type="submit" (click)="withdrawel()" class="btn btn-primary">OK</a>
+  </div>
+</div>

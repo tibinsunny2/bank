@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-image: url("./assets/r1.webp");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+#e{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+#r{
+    margin-left: 10%;
+    margin-top: 2%;
+}
