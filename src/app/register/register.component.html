@@ -3,10 +3,10 @@
     <div class="card w-25" id="q">
         <div class="card-body text-center">
           <h5 class="card-title"><b>REGISTER FORM</b></h5>
-          <form action="">
-            <input type="text" [(ngModel)]="username" name="username" placeholder="enter username"><br><br>
-            <input type="text" [(ngModel)]="account" name="account" placeholder="enter account number"><br><br>
-            <input type="password" [(ngModel)]="password" name="password" placeholder="enter password"><br><br>
+          <form [formGroup]="registerForm">
+            <input type="text" formControlName="username" name="username" placeholder="enter username"><br><br>
+            <input type="text" formControlName="account" [(ngModel)]="account" name="account" placeholder="enter account number"><br><br>
+            <input type="password" formControlName="password" [(ngModel)]="password" name="password" placeholder="enter password"><br><br>
           </form>
           <a  type="submit" (click)="register()" class="btn btn-primary">REGISTER</a><br><br>
           <p><b>If you are an existisng user??? pleace <a routerLink="login">LOGIN</a></b></p>

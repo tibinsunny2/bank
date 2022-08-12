@@ -1,0 +1,39 @@
+
+   <div class="card" id="p" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"><b><u>MINI STATEMENT</u></b></h5>
+      <table class="container bg-danger">
+        <thead>
+          <tr>
+            <th scope="col">type</th>
+            <th scope="col">amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let i of transactions">
+            <td>{{i.type}}</td>
+            <td>{{i.amount}}</td>
+          </tr>
+          <tr *ngFor="let i for transactions">
+            <td>{{i.type}}</td>
+            <td>{{i.amount}}</td>
+          </tr>
+        </tbody>
+      </table>
+        <br>
+        <br>
+      <a routerLink="/dashbord" class="btn btn-primary">BACK</a>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+    

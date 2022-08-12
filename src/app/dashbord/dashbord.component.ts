@@ -10,7 +10,11 @@ import { BankService } from 'src/service/bank.service';
 export class DashbordComponent implements OnInit {
   amount=''
   UID=''
-  account=''
+  account='' 
+
+  amount1=''
+  UID1=''
+  account1=''
   constructor(private routes:Router,private ds:BankService) { }
 
 
@@ -33,9 +37,15 @@ deposite(){
 
 }
 withdrawel(){
-  var amount=this.amount
-  var UID=this.UID
-  var account=this.account
- let result= this.ds.withdrawel(amount,UID,account)
+  var amount=this.amount1
+  var UID=this.UID1
+  var account=this.account1
+ let result= this.ds.withdraw(amount,UID,account)
+ if(result){
+  alert(`${amount} debited......the current balance is ${result}`)
+ }
+ else{
+  alert('the money is not debited')
+ }
 }
 }

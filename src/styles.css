@@ -10,9 +10,16 @@ body{
 }
 #e{
     margin-left: 10%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 #r{
     margin-left: 10%;
     margin-top: 2%;
+}
+table,tr,th,td{
+ 
+    border: 2px solid black;
+}
+#p{
+    margin-left: 20px;
 }

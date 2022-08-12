@@ -1,3 +1,9 @@
+<div class="card w-25 bg-white">
+  <div class="card-body">
+    <h2 style="float: right; color: red;"><b>Welcome user!!!!!</b></h2><br><br>
+<a routerLink="/transaction"><b>SHOW TRANSACTION DETAILS</b></a>
+  </div>
+</div>
 <div class="card w-25 bg-success" id="e">
   <div class="card-body">
     <h5 class="card-title"><b>DEPOSITE</b></h5>
@@ -13,9 +19,9 @@
   <div class="card-body">
     <h5 class="card-title"><b>WITHDRAWEL</b></h5>
     <form action="">
-      <input type="text" [(ngModel)]="amount" name="amount" placeholder="enter amount"><br><br>
-      <input type="text" [(ngModel)]="UID" name="UID" placeholder="enter UDI number"><br><br>
-      <input type="text" [(ngModel)]="account" name="account" placeholder="enter UDI number"><br><br>
+      <input type="text" [(ngModel)]="amount1" name="amount1" placeholder="enter amount"><br><br>
+      <input type="text" [(ngModel)]="UID1" name="UID1" placeholder="enter UDI number"><br><br>
+      <input type="text" [(ngModel)]="account1" name="account1" placeholder="enter account number"><br><br>
     </form>
     <a type="submit" (click)="withdrawel()" class="btn btn-primary">OK</a>
   </div>
